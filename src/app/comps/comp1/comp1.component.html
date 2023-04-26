@@ -1,0 +1,36 @@
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Full Name</th>
+    </tr>
+    <tr>
+        <td>
+            {{firstName()}}
+        </td>
+        <td>
+            {{lastName()}}
+        </td>
+        <td>
+            {{fullName()}}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" [value]="firstName()" #fname> 
+            <button (click)="changeFirstName(fname.value)">Change First Name</button>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+    </tr>
+</table>
