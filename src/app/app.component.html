@@ -1,5 +1,45 @@
 <router-outlet></router-outlet>
 <!-- <app-change-detection></app-change-detection>  -->
 <div class="wrapper">
+    <h2>
+        Normal Property
+    </h2>
     <app-comp1></app-comp1>
+
+
+    <br>
+    <h2>
+        Set & Computed
+        <br>
+        <small>
+            <strong>Set: </strong> Directly set the signal to a <mark>new value</mark>, and notify any dependents. 
+        </small>
+        <br>
+        <small>
+            <strong>Computed: </strong> Calculated signal value according to <mark>dependecy</mark>, and notify any dependents. 
+        </small>
+    </h2>
+    <app-comp2></app-comp2>
+
+
+    <br>
+    <h2>
+        Update
+        <br>
+        <small>
+            Update the value of the signal based on its <mark>current value</mark>, and notify any dependents. 
+        </small>
+    </h2>
+    <app-comp3></app-comp3>
+    
+    
+    <br>
+    <h2>
+        Mutate
+        <br>
+        <small>
+            Modifies the content of a signal value. Use it with arrays to modify <mark>array elements</mark>, and objects to modify <mark>object properties</mark> 
+        </small>
+    </h2>
+    <app-comp4></app-comp4>
 </div>

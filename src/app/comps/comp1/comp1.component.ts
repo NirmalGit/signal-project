@@ -1,4 +1,4 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-comp1',
@@ -7,19 +7,18 @@ import { Component, computed, signal } from '@angular/core';
 })
 export class Comp1Component {
 
+  firstName = 'anup';
+  lastName = 'sharma';
 
-  firstName = signal('anup');
-  lastName = signal('sharma');
 
-
-  fullName = computed(()=>{
-    return this.firstName() + ' ' + this.lastName()
-  });
-
+  fullName = this.firstName + ' ' + this.lastName;
 
 
   changeFirstName(fname:any){
-    this.firstName.set(fname);
+    this.firstName = fname;
+  }
+  changeLastName(lname:any){
+    this.lastName = lname;
   }
 
 }

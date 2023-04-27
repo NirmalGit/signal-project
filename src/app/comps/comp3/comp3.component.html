@@ -1,0 +1,29 @@
+<table class="table" style="width: 300px; text-align: center;">
+    <thead>
+      <tr>
+        <th>(-)</th>
+        <th>Qty</th>
+        <th>(+)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+            <button type="button" class="btn btn-danger" (click)="onDecreaseQty()">
+                -
+            </button>
+
+        </td>
+        <td>
+            {{qty()}}
+        </td>
+        <td>
+            <button type="button" class="btn btn-success" (click)="onIncreaseQty()">
+                +
+            </button>
+        </td>
+      </tr>
+        
+    </tbody>
+  </table>
+
