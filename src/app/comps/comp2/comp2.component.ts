@@ -7,13 +7,14 @@ import { Component, computed, signal } from '@angular/core';
 })
 export class Comp2Component {
 
-  firstName = signal('anup');
-  lastName = signal('sharma');
+  firstName = signal('nirmal')
+  lastName = signal('bage');
 
 
   fullName = computed(()=>{
     return this.firstName() + ' ' + this.lastName()
   });
+
 
 
   changeFirstName(fname:any){

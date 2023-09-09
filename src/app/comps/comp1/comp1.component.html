@@ -9,28 +9,28 @@
     <tbody>
         <tr>
             <td>
-                {{firstName}}
+                {{firstName()}}
             </td>
             <td>
-                {{lastName}}
+                {{lastName()}}
             </td>
             <td>
-                {{fullName}}
+                {{fullName()}}
             </td>
         </tr>
         <tr>
             <td>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" [value]="firstName" #fname placeholder="Change First Name">
+                    <input type="text" class="form-control" [value]="firstName()" #fname placeholder="Change First Name">
                     <button (click)="changeFirstName(fname.value)" class="btn btn-outline-primary" type="button">
                         Change First Name
                     </button>
                 </div>
-                
+
             </td>
             <td>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" [value]="lastName" #lname placeholder="Change Last Name">
+                    <input type="text" class="form-control" [value]="lastName()" #lname placeholder="Change Last Name">
                     <button (click)="changeLastName(lname.value)" class="btn btn-outline-primary" type="button">
                         Change Last Name
                     </button>
@@ -40,5 +40,5 @@
             </td>
         </tr>
     </tbody>
-    
+
 </table>
